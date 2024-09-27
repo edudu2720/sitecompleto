@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "bebas";
+    src: url(fontes/BebasNeue-Regular.ttf) format(truetype);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: #2C6352;
+    padding: 10px 20px;
+    height: 70px; 
+}
+
+header .logo img {
+    height: 100%; 
+    max-height: 170px; 
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 60px; 
+    text-align: center;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #f4f4f4;
+    text-decoration: underline;
+}
+
+header .cart img {
+    height: 30px;
+}
+
+#banner {
+    background-image: url('imagem/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-content {
+    color: #fff6f6;
+    text-align: center;
+}
+
+.banner-content h1 {
+    font-size: 30px;
+}
+
+.banner-content p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.banner-content .button {
+    padding: 10px 20px;
+    background-color: #2C6352;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+#banner2 {
+    background-image: url('imagem/banner2.png');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-content2 {
+    color: #fff6f6;
+    text-align: center;
+}
+
+.banner-content2 h1 {
+    font-size: 30px;
+}
+
+.banner-content2 p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+#produtos {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+#produtos h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.produto-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.produto-item {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.produto-item img {
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+
+.produto-item h3 {
+    font-size: 24px;
+}
+
+.produto-item p {
+    font-size: 20px;
+    color: #333;
+}
+
+.produto-item .button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.produto-item:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #2C6352;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+footer .social-media a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+footer .social-media img {
+    height: 30px;
+}
+#sobre h2{
+    text-align: center;
+}
+#sobre p{
+    text-align: center;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contato-section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-family: "bebas", sans-serif;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+
+p {
+    font-size: 18px;
+    color: #787777;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.contato-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    width: 100%;
+    max-width: 500px; 
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center; 
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group button {
+    padding: 15px 30px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-group button:hover {
+    background-color: #555;
+}
+
+.quiz-section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.question {
+    margin-bottom: 20px;
+}
+ 
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #2C6352;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+ 
+button:hover {
+    background-color: #457566;
+}
+ 
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+}
