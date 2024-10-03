@@ -230,6 +230,7 @@ p {
     margin-bottom: 20px;
     display: flex;
     justify-content: center; 
+    margin-left: 135px;
 }
 
 .form-group input,
